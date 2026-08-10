@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Kunghatkar - DevOps Engineer Portfolio</title>
+    <style>
+        /* General Reset & Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1e293b;
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #f8fafc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem 2rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #38bdf8;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #38bdf8;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        /* Skills & Lists */
+        ul.skills-list, ul.contact-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        ul.skills-list li {
+            background-color: #1e293b;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            border: 1px solid #334155;
+        }
+
+        /* Links */
+        a.contact-link {
+            color: #38bdf8;
+            text-decoration: none;
+            transition: underline 0.2s;
+        }
+
+        a.contact-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1e293b;
+            margin-top: 3rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Vaibhav K.</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hi, I'm Vaibhav Kunghatkar</h1>
+        <p>DevOps Engineer passionate about automation, CI/CD pipelines, and cloud architecture.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a DevOps professional focused on building scalable infrastructure, automating deployment workflows, and optimizing system reliability.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Linux / Bash</li>
+            <li>Docker & Kubernetes</li>
+            <li>CI/CD (GitHub Actions, Jenkins)</li>
+            <li>AWS / Cloud Computing</li>
+            <li>Terraform / IaC</li>
+            <li>Git & Version Control</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out my repositories and ongoing projects on <a href="https://github.com/vaibhavk2000" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or opportunities!</p>
+        <ul class="contact-list">
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vaibhav-kunghatkar-442b6a195" class="contact-link" target="_blank" rel="noopener noreferrer">vaibhav-kunghatkar</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/vaibhavk2000" class="contact-link" target="_blank" rel="noopener noreferrer">vaibhavk2000</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Vaibhav Kunghatkar. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
