@@ -89,8 +89,8 @@
             color: #cbd5e1;
         }
 
-        /* Skills & Lists */
-        ul.skills-list, ul.contact-list {
+        /* Skills List */
+        ul.skills-list {
             list-style: none;
             display: flex;
             flex-wrap: wrap;
@@ -105,15 +105,49 @@
             border: 1px solid #334155;
         }
 
-        /* Links */
-        a.contact-link {
+        /* Links & Buttons */
+        .inline-link {
             color: #38bdf8;
             text-decoration: none;
-            transition: underline 0.2s;
+            font-weight: 500;
         }
 
-        a.contact-link:hover {
+        .inline-link:hover {
             text-decoration: underline;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #38bdf8;
+            color: #0f172a;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0284c7;
+            color: #ffffff;
+        }
+
+        .btn-alt {
+            background-color: #1e293b;
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+        }
+
+        .btn-alt:hover {
+            background-color: #38bdf8;
+            color: #0f172a;
         }
 
         /* Footer */
@@ -168,17 +202,18 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <p>Check out my repositories and ongoing projects on <a href="https://github.com/vaibhavk2000" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+        <p>Check out my repositories and ongoing projects on <a href="https://github.com/vaibhavk2000" class="inline-link" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Feel free to reach out for collaborations or opportunities!</p>
-        <ul class="contact-list">
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vaibhav-kunghatkar-442b6a195" class="contact-link" target="_blank" rel="noopener noreferrer">vaibhav-kunghatkar</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/vaibhavk2000" class="contact-link" target="_blank" rel="noopener noreferrer">vaibhavk2000</a></li>
-        </ul>
+        <div class="contact-buttons">
+            <a href="https://linkedin.com/in/vaibhav-kunghatkar-442b6a195" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn Profile</a>
+            <a href="https://github.com/vaibhavk2000" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profile</a>
+            <a href="mailto:vaibhav@example.com" class="btn btn-alt">Email Me</a>
+        </div>
     </section>
 
     <!-- Footer -->
