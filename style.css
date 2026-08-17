@@ -75,3 +75,12 @@ h2 {
   border: 1px solid #4da6ff;
   padding: 12px 20px;
   border-radius: 8px;
+  
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: #ffffff;
+  position: relative;
+  min-height: 100vh;
+}
