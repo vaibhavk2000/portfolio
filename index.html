@@ -1,225 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Kunghatkar - DevOps Engineer Portfolio</title>
-    <style>
-        /* General Reset & Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #0f172a;
-            color: #f8fafc;
-            line-height: 1.6;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #1e293b;
-            padding: 1rem 2rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        nav .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #38bdf8;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 1.5rem;
-        }
-
-        nav ul li a {
-            color: #f8fafc;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #38bdf8;
-        }
-
-        /* Sections */
-        section {
-            padding: 5rem 2rem 2rem 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #38bdf8;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid #38bdf8;
-            display: inline-block;
-            padding-bottom: 0.3rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: #cbd5e1;
-        }
-
-        /* Skills List */
-        ul.skills-list {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        ul.skills-list li {
-            background-color: #1e293b;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            border: 1px solid #334155;
-        }
-
-        /* Links & Buttons */
-        .inline-link {
-            color: #38bdf8;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .inline-link:hover {
-            text-decoration: underline;
-        }
-
-        .contact-buttons {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background-color: #38bdf8;
-            color: #0f172a;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #0284c7;
-            color: #ffffff;
-        }
-
-        .btn-alt {
-            background-color: #1e293b;
-            color: #38bdf8;
-            border: 1px solid #38bdf8;
-        }
-
-        .btn-alt:hover {
-            background-color: #38bdf8;
-            color: #0f172a;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #1e293b;
-            margin-top: 3rem;
-            color: #94a3b8;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhav Kunghatkar - DevOps Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation -->
+  <!-- Hero -->
+  <header id="hero" class="fade-in">
+    <h1>Vaibhav Kunghatkar</h1>
+    <p>DevOps Engineer | Cloud Automation | CI/CD Specialist</p>
     <nav>
-        <div class="logo">Vaibhav K.</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recent">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+    <a href="#projects" class="cta-button">Explore My Work</a>
+    <a href="resume.pdf" class="cta-button" download>📄 Download Resume</a>
+  </header>
 
-    <!-- Home / Hero Section -->
-    <section id="home" class="hero">
-        <h1>Hi, I'm Vaibhav Kunghatkar</h1>
-        <p>DevOps Engineer passionate about automation, CI/CD pipelines, and cloud architecture.</p>
-    </section>
+  <!-- Skills -->
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-badge">🐧 Linux / Bash</div>
+      <div class="skill-badge">🐳 Docker</div>
+      <div class="skill-badge">☸️ Kubernetes</div>
+      <div class="skill-badge">⚙️ CI/CD (Jenkins, GitHub Actions)</div>
+      <div class="skill-badge">☁️ AWS Cloud</div>
+      <div class="skill-badge">📜 Terraform</div>
+      <div class="skill-badge">🔗 Git & Version Control</div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a DevOps professional focused on building scalable infrastructure, automating deployment workflows, and optimizing system reliability.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>Linux / Bash</li>
-            <li>Docker & Kubernetes</li>
-            <li>CI/CD (GitHub Actions, Jenkins)</li>
-            <li>AWS / Cloud Computing</li>
-            <li>Terraform / IaC</li>
-            <li>Git & Version Control</li>
-        </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Check out my repositories and ongoing projects on <a href="https://github.com/vaibhavk2000" class="inline-link" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or opportunities!</p>
-        <div class="contact-buttons">
-            <a href="https://linkedin.com/in/vaibhav-kunghatkar-442b6a195" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn Profile</a>
-            <a href="https://github.com/vaibhavk2000" target="_blank" rel="noopener noreferrer" class="btn">GitHub Profile</a>
-            <a href="mailto:vaibhav@example.com" class="btn btn-alt">Email Me</a>
+  <!-- Projects -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Deploying a Multi-Tier Student Management App on AWS</h3>
+        <div class="tech-icons">
+          <span class="icon">☁️ AWS</span>
+          <span class="icon">💻 EC2</span>
+          <span class="icon">🗄️ RDS</span>
+          <span class="icon">⚖️ Load Balancer</span>
         </div>
-    </section>
+        <p>Designed and deployed a scalable student management application with multi-tier architecture ensuring high availability and fault tolerance.</p>
+        <a href="https://github.com/vaibhav/student-management" target="_blank">🔗 GitHub</a>
+        <a href="https://student-app-demo.com" target="_blank" class="demo-btn">🚀 Live Demo</a>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Vaibhav Kunghatkar. All rights reserved.</p>
-    </footer>
+      <div class="project-card">
+        <h3>Enterprise Banking DevOps Infrastructure & Security Platform</h3>
+        <div class="tech-icons">
+          <span class="icon">☸️ Kubernetes</span>
+          <span class="icon">🐳 Docker</span>
+          <span class="icon">⚙️ Jenkins</span>
+          <span class="icon">📜 Terraform</span>
+          <span class="icon">🔒 Vault</span>
+        </div>
+        <p>Built a secure DevOps infrastructure for enterprise banking applications with automated CI/CD, container orchestration, and secrets management.</p>
+        <a href="https://github.com/vaibhav/banking-devops" target="_blank">🔗 GitHub</a>
+        <a href="https://banking-devops-demo.com" target="_blank" class="demo-btn">🚀 Live Demo</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Timeline -->
+  <section id="timeline" class="fade-in">
+    <h2>Career Timeline</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">2018–2022<br>B.Tech Civil Engg</div>
+      <div class="timeline-item">2022–2023<br>Junior Engineer</div>
+      <div class="timeline-item">2023–2024<br>Civil Technical Engineer</div>
+      <div class="timeline-item">2024–2026<br>Assistant Application Engineer</div>
+      <div class="timeline-item">2026–Present<br>DevOps Engineer, ZeTheta Algorithm Pvt Ltd</div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="recent" class="fade-in">
+    <h2>Recent Experience</h2>
+    <div class="project-card">
+      <h3>DevOps Engineer at ZeTheta Algorithm Pvt Ltd</h3>
+      <p><strong>2026 – Present</strong></p>
+      <p>Working on cloud automation, CI/CD pipelines, and infrastructure optimization projects with a focus on scalability and reliability.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:vaibhavkunghatkar@gmail.com">vaibhavkunghatkar@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/vaibhavk2000" target="_blank">github.com/vaibhav</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vaibhav-kunghatkar-442b6a195/" target="_blank">linkedin.com/in/vaibhav-kunghatkar-442b6a195</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Vaibhav Kunghatkar | DevOps Engineer</p>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
 </body>
 </html>
