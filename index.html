@@ -95,7 +95,7 @@
   <section id="contact" class="fade-in">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:vaibhavkunghatkar@gmail.com">vaibhavkunghatkar@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/vaibhavk2000" target="_blank">github.com/vaibhav</a></p>
+    <p>GitHub: <a href="https://github.com/vaibhavk2000" target="_blank">github.com/vaibhavk2000</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/vaibhav-kunghatkar-442b6a195/" target="_blank">linkedin.com/in/vaibhav-kunghatkar-442b6a195</a></p>
   </section>
 
@@ -118,6 +118,32 @@
     faders.forEach(fader => {
       appearOnScroll.observe(fader);
     });
+    <body>
+  <!-- Live Background Canvas -->
+  <div id="particles-js" style="position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; z-index: -1;"></div>
+
+  <!-- YOUR EXISTING BODY CONTENT HERE -->
+
+  <!-- Particles.js Script -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: "#6366f1" },
+        shape: { type: "circle" },
+        opacity: { value: 0.4 },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#6366f1", opacity: 0.3, width: 1 },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
   </script>
 </body>
 </html>
