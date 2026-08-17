@@ -12,6 +12,9 @@
 
     <!-- Hero -->
     <header id="hero" class="fade-in">
+        <!-- Profile Photo (Ensure the 'src' matches your filename) -->
+        <img src="profile.jpg" alt="Vaibhav Kunghatkar" class="fixed-profile-photo">
+
         <h1>Vaibhav Kunghatkar</h1>
         <p>DevOps Engineer | Cloud Automation | CI/CD Specialist</p>
         <nav>
@@ -45,45 +48,13 @@
         <div class="projects-grid">
             <div class="project-card">
                 <h3>Deploying a Multi-Tier Student Management App on AWS</h3>
-                <div class="tech-icons">
-                    <span class="icon">☁️ AWS</span>
-                    <span class="icon">💻 EC2</span>
-                    <span class="icon">🗄️ RDS</span>
-                    <span class="icon">⚖️ Load Balancer</span>
-                </div>
                 <p>Designed and deployed a scalable student management application with multi-tier architecture ensuring high availability and fault tolerance.</p>
-                <a href="https://github.com/vaibhav/student-management" target="_blank">🔗 GitHub</a>
-                <a href="https://student-app-demo.com" target="_blank" class="demo-btn">🚀 Live Demo</a>
-            </div>
-            <div class="project-card">
-                <h3>Enterprise Banking DevOps Infrastructure & Security Platform</h3>
-                <div class="tech-icons">
-                    <span class="icon">☸️ Kubernetes</span>
-                    <span class="icon">🐳 Docker</span>
-                    <span class="icon">⚙️ Jenkins</span>
-                    <span class="icon">📜 Terraform</span>
-                    <span class="icon">🔒 Vault</span>
-                </div>
-                <p>Built a secure DevOps infrastructure for enterprise banking applications with automated CI/CD, container orchestration, and secrets management.</p>
-                <a href="https://github.com/vaibhav/banking-devops" target="_blank">🔗 GitHub</a>
-                <a href="https://banking-devops-demo.com" target="_blank" class="demo-btn">🚀 Live Demo</a>
+                <a href="https://github.com/vaibhavk2000" target="_blank">🔗 GitHub</a>
             </div>
         </div>
     </section>
 
-    <!-- Timeline -->
-    <section id="timeline" class="fade-in">
-        <h2>Career Timeline</h2>
-        <div class="timeline-container">
-            <div class="timeline-item">2018–2022<br>B.Tech Civil Engg</div>
-            <div class="timeline-item">2022–2023<br>Junior Engineer</div>
-            <div class="timeline-item">2023–2024<br>Civil Technical Engineer</div>
-            <div class="timeline-item">2024–2026<br>Assistant Application Engineer</div>
-            <div class="timeline-item">2026–Present<br>DevOps Engineer, ZeTheta Algorithm Pvt Ltd</div>
-        </div>
-    </section>
-
-    <!-- Experience -->
+    <!-- Recent Experience -->
     <section id="recent" class="fade-in">
         <h2>Recent Experience</h2>
         <div class="project-card">
@@ -98,14 +69,13 @@
         <h2>Contact</h2>
         <p>Email: <a href="mailto:vaibhavkunghatkar@gmail.com">vaibhavkunghatkar@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/vaibhavk2000" target="_blank">github.com/vaibhavk2000</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/vaibhav-kunghatkar-442b6a195/" target="_blank">linkedin.com/in/vaibhav-kunghatkar-442b6a195</a></p>
     </section>
 
     <footer>
         <p>© 2026 Vaibhav Kunghatkar | DevOps Engineer</p>
     </footer>
 
-    <!-- Scroll Animation Script -->
+    <!-- Fade Scroll Animation Script -->
     <script>
         const faders = document.querySelectorAll('.fade-in');
         const appearOptions = { threshold: 0.2 };
@@ -119,17 +89,17 @@
         faders.forEach(fader => { appearOnScroll.observe(fader); });
     </script>
 
-    <!-- Live Particles Script -->
+    <!-- Live Particles Background Script -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         particlesJS("particles-js", {
             particles: {
-                number: { value: 60, density: { enable: true, value_area: 800 } },
-                color: { value: "#6366f1" },
+                number: { value: 70, density: { enable: true, value_area: 800 } },
+                color: { value: "#4da6ff" },
                 shape: { type: "circle" },
                 opacity: { value: 0.5 },
                 size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 150, color: "#6366f1", opacity: 0.4, width: 1 },
+                line_linked: { enable: true, distance: 150, color: "#4da6ff", opacity: 0.4, width: 1 },
                 move: { enable: true, speed: 2 }
             },
             interactivity: {
