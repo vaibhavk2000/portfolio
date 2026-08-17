@@ -1,86 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #ffffff;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  background: url('https://i.pinimg.com/originals/6f/6a/6e/6f6a6e8a9c8b4e6b9a7b4e6b9a7b4e6b.jpg') no-repeat center center fixed;
-  background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0f172a;
+    position: relative;
+    min-height: 100vh;
 }
 
 header, section, footer {
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
 }
 
 header.visible, section.visible, footer.visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
 }
 
 nav a {
-  color: #4da6ff;
-  text-decoration: none;
-  font-weight: bold;
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 h2 {
-  border-bottom: 2px solid #4da6ff;
-  padding-bottom: 8px;
-  color: #4da6ff;
+    border-bottom: 2px solid #4da6ff;
+    padding-bottom: 8px;
+    color: #4da6ff;
 }
 
 .cta-button {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #4da6ff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #4da6ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
 }
 
 .cta-button:hover {
-  background: #1a75d1;
+    background: #1a75d1;
 }
 
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .skill-badge {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid #4da6ff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #0f172a;
-  color: #ffffff;
-  position: relative;
-  min-height: 100vh;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #4da6ff;
+    padding: 12px 20px;
+    border-radius: 8px;
 }
