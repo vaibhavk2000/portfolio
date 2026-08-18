@@ -1,103 +1,155 @@
+/* Base Layout & Reset */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #0f172a;
-    position: relative;
-    min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-color: #0f172a;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
 }
 
+/* Glassmorphism Sections */
 header, section, footer {
-    background: rgba(15, 23, 42, 0.75);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 1000px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
 }
 
 header.visible, section.visible, footer.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 0;
+/* Header & Profile Photo */
+header {
+  text-align: center;
 }
 
-nav a {
-    color: #4da6ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-h2 {
-    border-bottom: 2px solid #4da6ff;
-    padding-bottom: 8px;
-    color: #4da6ff;
-}
-
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: #4da6ff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background 0.3s;
-}
-
-.cta-button:hover {
-    background: #1a75d1;
-}
-
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.skill-badge {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid #4da6ff;
-    padding: 12px 20px;
-    border-radius: 8px;
-}
-/* Custom Profile Photo Styling (Option A) */
 .fixed-profile-photo {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid #4da6ff;
-    box-shadow: 0 4px 15px rgba(77, 166, 255, 0.4);
-    z-index: 100;
-    transition: transform 0.3s ease-in-out;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4da6ff;
+  box-shadow: 0 4px 15px rgba(77, 166, 255, 0.4);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
 }
 
 .fixed-profile-photo:hover {
-    transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #4da6ff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(77, 166, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Headings */
+h2 {
+  border-bottom: 2px solid #4da6ff;
+  padding-bottom: 8px;
+  color: #4da6ff;
+  margin-bottom: 16px;
+}
+
+/* Action Buttons */
+.cta-button, .btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 12px 24px;
+  background: #4da6ff;
+  color: #0f172a;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover, .btn:hover {
+  background: #388ee6;
+  transform: translateY(-2px);
+}
+
+/* Grids for Skills and Projects */
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-badge, .project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(77, 166, 255, 0.4);
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Mobile Responsiveness (Screens 768px or smaller) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header, section, footer {
+    padding: 16px;
+    margin: 10px auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta-button, .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .skills-grid, .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
