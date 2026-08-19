@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Vaibhav Kunghatkar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
+    <!-- Background Canvas -->
     <div id="particles-js" style="position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; z-index: -1;"></div>
-    
-    <header class="fade-in">
+
+    <!-- Header / Hero Section -->
+    <header>
+        <img src="profile.jpg" alt="Vaibhav Kunghatkar" class="fixed-profile-photo">
+        <h1>Vaibhav Kunghatkar</h1>
+        <p>DevOps Engineer | Cloud Automation | CI/CD Specialist</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,10 +23,13 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <a href="projects.html" class="cta-button">Explore My Work</a>
+        <a href="resume.pdf" class="cta-button" download>📄 Download Resume</a>
     </header>
 
+    <!-- Experience Section -->
     <main>
-        <section id="experience" class="fade-in">
+        <section id="experience">
             <h2>Work Experience</h2>
 
             <div class="job">
@@ -29,7 +37,7 @@
                 <p class="date">2026</p>
                 <ul>
                     <li>Designed and optimized CI/CD pipelines using GitLab.</li>
-                    <li>Deployed containerized applications with Docker & Kubernetes.</li>
+                    <li>Deployed containerized applications with Docker &amp; Kubernetes.</li>
                     <li>Automated infrastructure provisioning with Terraform.</li>
                     <li>Configured AWS services (CloudFront, EC2) for scalable deployments.</li>
                     <li>Collaborated with senior engineers to integrate monitoring and logging solutions.</li>
@@ -68,6 +76,7 @@
         <p>© 2026 Vaibhav Kunghatkar | DevOps Engineer</p>
     </footer>
 
+    <!-- Particles Background Script -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         particlesJS("particles-js", {
