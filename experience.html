@@ -1,102 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - Vaibhav Kunghatkar</title>
-    <link rel="stylesheet" href="style.css?v=3">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Vaibhav Kunghatkar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Canvas -->
-    <div id="particles-js" style="position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; z-index: -1;"></div>
 
-    <!-- Header / Hero Section -->
-    <header>
-        <img src="profile.jpg" alt="Vaibhav Kunghatkar" class="fixed-profile-photo">
-        <h1>Vaibhav Kunghatkar</h1>
-        <p>DevOps Engineer | Cloud Automation | CI/CD Specialist</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="projects.html" class="cta-button">Explore My Work</a>
-        <a href="resume.pdf" class="cta-button" download>📄 Download Resume</a>
-    </header>
+  <nav>
+    <a href="index.html" class="logo">VK<span>.devops</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="experience.html" class="active">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
-    <!-- Experience Section -->
-    <main>
-        <section id="experience">
-            <h2>Work Experience</h2>
+  <main class="container">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid #262626; padding-bottom: 1rem;">
+      <div>
+        <p class="subtitle">Qualifications</p>
+        <h1 class="title">Resume & Experience</h1>
+      </div>
+      <a href="resume.pdf" class="btn-primary" download>Download PDF</a>
+    </div>
 
-            <div class="job">
-                <h3>DevOps Engineer Intern | ZeTheta Algorithm Pvt Ltd</h3>
-                <p class="date">2026</p>
-                <ul>
-                    <li>Designed and optimized CI/CD pipelines using GitLab.</li>
-                    <li>Deployed containerized applications with Docker &amp; Kubernetes.</li>
-                    <li>Automated infrastructure provisioning with Terraform.</li>
-                    <li>Configured AWS services (CloudFront, EC2) for scalable deployments.</li>
-                    <li>Collaborated with senior engineers to integrate monitoring and logging solutions.</li>
-                </ul>
-            </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+      <div>
+        <h2 style="color: #dc2626; border-bottom: 1px solid #262626; padding-bottom: 0.5rem; margin-bottom: 1.5rem;">DevOps Experience</h2>
+        <div style="border-left: 2px solid #dc2626; padding-left: 1rem; margin-bottom: 1.5rem;">
+          <span style="color: #a3a3a3; font-size: 0.8rem;">Recent / Active</span>
+          <h3 style="color: #fff;">DevOps & Cloud Engineer</h3>
+          <p style="color: #a3a3a3; font-size: 0.9rem;">Architected continuous delivery pipelines, optimized build automation, and managed container deployment using Docker and Kubernetes.</p>
+        </div>
+      </div>
 
-            <div class="job">
-                <h3>Application Engineer | Ultratech Cement Ltd</h3>
-                <p class="date">2024 – 2026</p>
-                <ul>
-                    <li>Supported application engineering projects, ensuring system reliability and performance.</li>
-                    <li>Applied automation concepts to streamline workflows.</li>
-                </ul>
-            </div>
+      <div>
+        <h2 style="color: #dc2626; border-bottom: 1px solid #262626; padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Core Competencies</h2>
+        <div style="border-left: 2px solid #dc2626; padding-left: 1rem;">
+          <span style="color: #a3a3a3; font-size: 0.8rem;">Infrastructure & Tooling</span>
+          <h3 style="color: #fff;">System & Deployment Specialist</h3>
+          <p style="color: #a3a3a3; font-size: 0.9rem;">Automated server configuration, monitored performance metrics, and maintained continuous deployment workflows using GitHub Actions.</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
-            <div class="job">
-                <h3>Civil Technical Engineer | Sambro’s Spares Pvt Ltd</h3>
-                <p class="date">2023 – 2024</p>
-                <ul>
-                    <li>Oversaw technical civil engineering projects, ensuring compliance with safety and quality standards.</li>
-                    <li>Prepared schematic diagrams and flow charts for project execution.</li>
-                </ul>
-            </div>
+  <footer>
+    <p>&copy; 2026 Vaibhav Kunghatkar. All rights reserved.</p>
+  </footer>
 
-            <div class="job">
-                <h3>Junior Engineer | Harshal Buildcon LLP</h3>
-                <p class="date">2022 – 2023</p>
-                <ul>
-                    <li>Assisted in site supervision, structural design, and project documentation.</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 Vaibhav Kunghatkar | DevOps Engineer</p>
-    </footer>
-
-    <!-- Particles Background Script -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS("particles-js", {
-            particles: {
-                number: { value: 70, density: { enable: true, value_area: 800 } },
-                color: { value: "#4da6ff" },
-                shape: { type: "circle" },
-                opacity: { value: 0.5 },
-                size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 150, color: "#4da6ff", opacity: 0.4, width: 1 },
-                move: { enable: true, speed: 2 }
-            },
-            interactivity: {
-                events: {
-                    onhover: { enable: true, mode: "repulse" },
-                    onclick: { enable: true, mode: "push" }
-                }
-            },
-            retina_detect: true
-        });
-    </script>
 </body>
 </html>
