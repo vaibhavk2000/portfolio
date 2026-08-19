@@ -1,77 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vaibhav Kunghatkar - DevOps Engineer Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=3">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Kunghatkar - DevOps Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
+    <!-- Background Canvas -->
+    <div id="particles-js" style="position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; z-index: -1;"></div>
 
-  <!-- Background Canvas -->
-  <div id="particles-js" style="position: fixed; width: 100vw; height: 100vh; top: 0; left: 0; z-index: -1;"></div>
+    <!-- Header / Hero Section -->
+    <header>
+        <img src="profile.jpg" alt="Vaibhav Kunghatkar" class="fixed-profile-photo">
+        <h1>Vaibhav Kunghatkar</h1>
+        <p>DevOps Engineer | Cloud Automation | CI/CD Specialist</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="projects.html" class="cta-button">Explore My Work</a>
+        <a href="resume.pdf" class="cta-button" download>📄 Download Resume</a>
+    </header>
 
-  <!-- Header / Hero Section -->
-  <header>
-    <img src="profile.jpg" alt="Vaibhav Kunghatkar" class="fixed-profile-photo">
-    <h1>Vaibhav Kunghatkar</h1>
-    <p>DevOps Engineer | Cloud Automation | CI/CD Specialist</p>
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                A passionate and results-driven DevOps Engineer with expertise in modern CI/CD practices, 
+                containerization, infrastructure automation, and cloud architecture. Skilled in leveraging tools 
+                like Docker, Kubernetes, Terraform, AWS, and GitLab CI/CD to build scalable, reliable, and secure systems.
+            </p>
+        </section>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>DevOps & CI/CD</h3>
+                    <ul>
+                        <li>GitLab CI/CD</li>
+                        <li>Docker &amp; Kubernetes</li>
+                        <li>Terraform</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud Infrastructure</h3>
+                    <ul>
+                        <li>AWS (EC2, CloudFront, S3)</li>
+                        <li>Monitoring &amp; Logging</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Skills</h3>
+                    <ul>
+                        <li>Workflow Automation</li>
+                        <li>System Reliability</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <a href="projects.html" class="cta-button">Explore My Work</a>
-    <a href="resume.pdf" class="cta-button" download>📄 Download Resume</a>
-  </header>
+    <footer>
+        <p>© 2026 Vaibhav Kunghatkar | DevOps Engineer</p>
+    </footer>
 
-  <!-- Skills Section -->
-  <main>
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-badge">🐧 Linux / Bash</div>
-        <div class="skill-badge">🐳 Docker</div>
-        <div class="skill-badge">☸️ Kubernetes</div>
-        <div class="skill-badge">⚙️ CI/CD (Jenkins, GitHub Actions)</div>
-        <div class="skill-badge">☁️ AWS Cloud</div>
-        <div class="skill-badge">📜 Terraform</div>
-        <div class="skill-badge">🔗 Git & Version Control</div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Vaibhav Kunghatkar | DevOps Engineer</p>
-  </footer>
-
-  <!-- Particles Background Script -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 70, density: { enable: true, value_area: 800 } },
-        color: { value: "#4da6ff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: 3, random: true },
-        line_linked: { enable: true, distance: 150, color: "#4da6ff", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 2 }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" }
-        }
-      },
-      retina_detect: true
-    });
-  </script>
-
+    <!-- Particles Background Script -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 70, density: { enable: true, value_area: 800 } },
+                color: { value: "#4da6ff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: "#4da6ff", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2 }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
 </body>
 </html>
