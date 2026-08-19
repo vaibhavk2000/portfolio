@@ -9,7 +9,6 @@
 <body>
 
   <nav>
-    <a href="index.html" class="logo">VK<span>.devops</span></a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="experience.html">Resume</a>
@@ -19,18 +18,51 @@
   </nav>
 
   <main class="container">
-    <div style="margin-bottom: 2rem; border-bottom: 1px solid #262626; padding-bottom: 1rem;">
+    <div style="margin-bottom: 2.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
       <p class="subtitle">Portfolio</p>
       <h1 class="title">Featured DevOps Projects</h1>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-      <div style="background-color: #181818; border: 1px solid #262626; border-radius: 8px; overflow: hidden; padding: 1.5rem;">
-        <span style="color: #dc2626; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;">CI/CD / Deployment</span>
-        <h3 style="color: #fff; margin: 0.5rem 0;">DevOps Engineer Portfolio Site</h3>
-        <p style="color: #a3a3a3; font-size: 0.9rem; margin-bottom: 1rem;">A personal portfolio showcasing DevOps projects, deployed via GitHub Pages and Vercel.</p>
-        <a href="https://github.com/vaibhavk2000/portfolio" target="_blank" style="color: #dc2626; text-decoration: none; font-size: 0.85rem; font-weight: 600;">GitHub Repository &rarr;</a>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+      
+      <!-- Project 1 -->
+      <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.3s ease;">
+        <div style="height: 220px; overflow: hidden; position: relative; border-bottom: 1px solid var(--border-color);">
+          <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?fit=crop&w=800&q=80" alt="Deploying a Multi-Tier Student Management App on AWS" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+          <div>
+            <span style="color: var(--accent-red); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">AWS & Multi-Tier Architecture</span>
+            <h3 style="color: #fff; font-size: 1.25rem; margin: 0.5rem 0 0.75rem; font-weight: 700;">Deploying a Multi-Tier Student Management App on AWS</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+              Architected and deployed a scalable multi-tier web application on AWS featuring secure database connectivity, load balancing, automated autoscaling groups, and isolated VPC networks.
+            </p>
+          </div>
+          <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+            <a href="https://github.com/vaibhavk2000/portfolio" target="_blank" style="color: var(--accent-red); text-decoration: none; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">View Project &rarr;</a>
+          </div>
+        </div>
       </div>
+
+      <!-- Project 2 -->
+      <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.3s ease;">
+        <div style="height: 220px; overflow: hidden; position: relative; border-bottom: 1px solid var(--border-color);">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?fit=crop&w=800&q=80" alt="Enterprise Banking DevOps Infrastructure & Security Platform" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+          <div>
+            <span style="color: var(--accent-red); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">DevSecOps & Kubernetes</span>
+            <h3 style="color: #fff; font-size: 1.25rem; margin: 0.5rem 0 0.75rem; font-weight: 700;">Enterprise Banking DevOps Infrastructure & Security Platform</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+              Implemented an end-to-end DevSecOps pipeline for enterprise banking microservices, incorporating automated vulnerability scanning, Kubernetes orchestration, and centralized infrastructure security controls.
+            </p>
+          </div>
+          <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+            <a href="https://github.com/vaibhavk2000/portfolio" target="_blank" style="color: var(--accent-red); text-decoration: none; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">View Project &rarr;</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
