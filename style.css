@@ -1,6 +1,6 @@
 /* Color Variables & Reset */
 :root {
-  --bg-main: #121212;
+  --bg-main: rgba(18, 18, 18, 0.75); /* Semi-transparent to let video show through */
   --bg-card: #181818;
   --accent-red: #dc2626;
   --text-main: #ffffff;
@@ -19,9 +19,10 @@ body {
   color: var(--text-main);
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
-/* Fullscreen Video Background */
+/* Fullscreen Video Background Fix */
 #bg-video {
   position: fixed;
   top: 0;
@@ -29,9 +30,9 @@ body {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1;
-  filter: grayscale(100%) contrast(120%) opacity(0.3);
+  z-index: -1; /* Placed behind all content */
   pointer-events: none;
+  filter: contrast(110%); /* Keeps original color vibrancy */
 }
 
 /* Navigation Header */
@@ -40,7 +41,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(18, 18, 18, 0.9);
+  background-color: rgba(18, 18, 18, 0.85);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-color);
   z-index: 100;
@@ -83,6 +84,8 @@ nav {
   max-width: 1100px;
   margin: 0 auto;
   padding: 8rem 1.5rem 4rem;
+  position: relative;
+  z-index: 1;
 }
 
 /* Hero Section Grid */
@@ -191,4 +194,6 @@ footer {
   font-size: 0.85rem;
   border-top: 1px solid var(--border-color);
   margin-top: 4rem;
+  position: relative;
+  z-index: 1;
 }
