@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Fullscreen Video Background -->
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
     <nav>
         <div class="nav-links">
             <a href="index.html">Home</a>
@@ -15,11 +20,13 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
+
     <main class="container">
         <div style="margin-bottom: 2.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
             <p class="subtitle">Career Path</p>
             <h1 class="title">Work Experience</h1>
         </div>
+
         <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
             <!-- Current Role & DevOps Projects -->
             <div style="background-color: var(--bg-card); padding: 1.5rem; border-radius: 0 8px 8px 0; border: 1px solid var(--border-color); border-left: 3px solid var(--accent-red);">
@@ -84,6 +91,7 @@
             </div>
         </div>
     </main>
+
     <footer>
         <p>&copy; 2026 Vaibhav Kunghatkar. All rights reserved.</p>
     </footer>
