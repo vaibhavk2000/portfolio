@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Fullscreen Video Background -->
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
     <nav>
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
@@ -34,11 +39,9 @@
                 </div>
             </div>
             
+            <!-- Profile Photo Card -->
             <div class="image-card">
-                <video autoplay loop muted playsinline poster="profile.png">
-                    <source src="video.mp4" type="video/mp4">
-                    <img src="profile.png" alt="Vaibhav Kunghatkar">
-                </video>
+                <img src="profile.png" alt="Vaibhav Kunghatkar">
             </div>
         </section>
     </main>
