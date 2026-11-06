@@ -1,4 +1,4 @@
-# Vaibhav Kunghatkar - DevOps Engineer Portfolio
+# Vaibhav Kunghatkar - Portfolio
 
 This is my personal portfolio showcasing my skills, projects, and experience as a DevOps Engineer.
 
